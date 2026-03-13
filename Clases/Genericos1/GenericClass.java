@@ -1,4 +1,4 @@
-public class Generic<T> {
+public class GenericClass<T> {
     private T valor;
 
     public void setValor(T valor) {
@@ -8,5 +8,6 @@ public class Generic<T> {
     public T getValor() {
         return valor;
     }
+
     
 }

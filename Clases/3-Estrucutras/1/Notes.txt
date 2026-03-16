@@ -1,0 +1,3 @@
+Las jerarquias mas altas no pueden reconocer lo de abajo, por ejemplo List no sabe lo que tiene ArrayList
+
+List <String> arrayList = new ArrayList<>(); --> Tendriamos que cambiar la referencia para poder usar lo de ArrayList

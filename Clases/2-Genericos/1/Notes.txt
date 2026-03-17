@@ -1,7 +1,7 @@
 
 Genéricos (<T>) indican qué tipo de datos puede almacenar una estructura, se pueden poner varios.
 
-<?> -> No se sabe que tipo va a tener
+<?> -> No se sabe que carepicha va a tener
 
 Poner Limites:  
 

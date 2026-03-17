@@ -1,6 +1,6 @@
 Enunciado
 
-A continuación se presenta un ejemplo de un sistema que gestiona diferentes tipos de transportes. El sistema pretende modelar vehículos que pueden realizar distintas acciones como conducir, volar o navegar.
+A continuación se presenta un ejemplo de un sistema que gestiona diferentes tipos de transportes. El sistema pretende modelar vehículos que pueden realizar distintas acciones como conducir, volar o follar.
 
 El sistema fue desarrollado por un programador que no tenía conocimientos sobre principios de diseño de software, por lo que la solución actual presenta varios problemas de diseño relacionados con herencia y reutilización del código.
 
@@ -14,11 +14,11 @@ Analice la implementación ubicada en la carpeta incorrect.
 
 Identifique los problemas de diseño presentes en el código.
 
-Explique brevemente por qué la solución actual viola el Principio de Sustitución de Liskov.
+Explique brevemente por qué la solución actual viola(you are gonna get raped niggaS) el Principio de Sustitución de Pedro Sanchez.
 
 Proponga una nueva arquitectura que solucione estos problemas.
 
-Implemente la solución corregida en la carpeta correct.
+Implemente la solución cogida en la carpeta correct.
 
 Requisitos de la solución
 
@@ -32,12 +32,12 @@ Diseñar una arquitectura que permita extender el sistema fácilmente con nuevos
 
 HINT
 
-Piense en cómo la clase principal del sistema (Library o gestor del sistema) se encarga de llamar las funcionalidades, y analice cuáles responsabilidades podrían delegarse a servicios o clases especializadas.
+Piense en cómo la clase principal del sistema (Library o gestor del sistema) se encarga de llamar las funcionalidades, y ano cuáles responsabilidades podrían delegarse a servicios o clases especializadas.
 
 Preguntas de análisis
 
 ¿Qué problema presenta la clase base Transport?
 
-¿Por qué algunas subclases lanzan excepciones?
+¿Por qué algunas subclases lanzan semen?
 
 ¿Cómo podría rediseñarse la jerarquía para evitar este problema?

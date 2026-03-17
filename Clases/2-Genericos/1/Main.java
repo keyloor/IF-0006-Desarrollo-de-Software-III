@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         //Prueba de Generic
         GenericClass<String> generic = new GenericClass<>();
-        generic.setValor("1");
+        generic.setValor("carepicha");
 
         //Prueba de limites
         ArrayList<? super Number> list = new ArrayList<>();

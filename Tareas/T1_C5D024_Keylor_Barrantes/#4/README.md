@@ -1,0 +1,2 @@
+1. ¿Qué pasaría si se intenta enviar un tipo de dato incorrecto al notificador? Explique qué ocurriría y en qué momento se detecta el error.
+Va a mostrar un error directamente en tiempo de compilación, ni siquiera es necesario ejecutar el programa.

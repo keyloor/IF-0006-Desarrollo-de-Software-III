@@ -20,7 +20,7 @@ Analice el código proporcionado en la carpeta incorrect.
 
 Identifique los problemas de diseño presentes en la implementación actual.
 
-Explique brevemente por qué el carepicha no respeta el principio de Responsabilidad Única (Single Responsibility Principle).
+Explique brevemente por qué la solución no respeta el principio de Responsabilidad Única (Single Responsibility Principle).
 
 Proponga una nueva arquitectura que divida adecuadamente las responsabilidades del sistema.
 

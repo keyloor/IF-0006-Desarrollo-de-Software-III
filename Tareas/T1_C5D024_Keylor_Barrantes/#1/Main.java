@@ -6,6 +6,6 @@ public class Main {
 
         Box<Integer> boxInteger = new Box<>();
         boxInteger.save(1);
-        System.out.println(box.get());
+        System.out.println(boxInteger.get());
     }
 }

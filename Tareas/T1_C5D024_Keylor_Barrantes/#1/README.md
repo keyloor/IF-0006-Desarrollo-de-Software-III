@@ -1,5 +1,5 @@
 1. ¿Qué problema de diseño observa en las clases CajaString y CajaInteger?
-El código se repite mucho; es el mismo, solo cambia el tipo de dato que aceptan.
+El código se repite mucho; es lo mismo, solo cambia el tipo de dato que aceptan.
 
 2. ¿Qué pasaría si necesitáramos una caja para Double, Boolean o Persona?
 Tendríamos que duplicar aún más código para cada tipo.

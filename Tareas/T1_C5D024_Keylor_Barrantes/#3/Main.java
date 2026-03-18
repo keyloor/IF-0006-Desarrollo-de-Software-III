@@ -1,7 +1,9 @@
+
 public class Main {
+
     public static void main(String[] args) {
-        Player player = new Player("Heroe");
-        Enemy enemy = new Enemy("Duende");
+        Player player = new Player("Hero");
+        Enemy enemy = new Enemy("Goblin");
 
         player.attack(enemy);
         enemy.attack(player);

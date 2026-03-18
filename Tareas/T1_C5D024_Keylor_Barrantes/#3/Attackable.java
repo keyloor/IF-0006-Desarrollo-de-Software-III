@@ -1,3 +1,3 @@
-public interface Attackable<T> {
-    public void attack(T objective);
+interface Attackable<T> {
+    void attack(T objective);
 }

@@ -1,0 +1,2 @@
+- Stack: Primitivos
+- Heap: Objetos (El heap contiene la String pool)

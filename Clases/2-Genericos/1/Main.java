@@ -15,6 +15,8 @@ public class Main {
         list.add(integer);
         list.add(number);
 
+        System.out.println(list);
+
     }
 
 

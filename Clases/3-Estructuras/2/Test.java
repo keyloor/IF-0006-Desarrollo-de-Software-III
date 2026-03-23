@@ -3,10 +3,11 @@ import java.util.Collection;
 
 public class Test {
     public static void main(String[] args) {
-        Collection<Integer> lista3 = new ArrayList<>();
+        Collection<Integer> numeros = new ArrayList<>();
 
-        lista3.add(12);
-        System.out.println("lista3.foreach()");
-        //System.out.println(lista3.get(0));
+        System.out.println(numeros);
+        numeros.add(1);
+        //System.out.println("numeros.foreach()");
+        //System.out.println(numeros.get(0));
     }
 }

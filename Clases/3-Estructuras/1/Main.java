@@ -4,7 +4,7 @@ import java.util.Collection;
 
 public class Main {
     public static void main(String[] args) {
-        Collection <String> vehiculos = new ArrayList<String>();
+        Collection <String> vehiculos = new ArrayList<>();
         
         vehiculos.add("Bicicleta");
         vehiculos.add("Carro");

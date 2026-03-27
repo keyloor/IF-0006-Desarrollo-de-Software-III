@@ -43,6 +43,9 @@ public class Time {
 
         System.out.println("Linked list get time:  " + (finishLG - startLG + " ns"));
 
+        System.out.println(a);
+        System.out.println(l);
+
 
     }    
 }

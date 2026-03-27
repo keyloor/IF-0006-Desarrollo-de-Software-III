@@ -1,0 +1,352 @@
+/* =========================================================
+   DISEÑO PREMIUM Y LIMPIO PARA MEDIACIÓN VIRTUAL UCR
+   ========================================================= */
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@400;500&display=swap");
+
+:root {
+  /* Paleta de colores Premium */
+  --mv-primary: #3b82f6;
+  --mv-primary-hover: #2563eb;
+  --mv-accent: #8b5cf6;
+  --mv-bg: #f8fafc;
+  --mv-card-bg: #ffffff;
+  --mv-text-main: #0f172a;
+  --mv-text-muted: #64748b;
+  --mv-border: #e2e8f0;
+
+  /* Radios y Sombras ultra suaves (Soft-UI) */
+  --mv-radius-lg: 20px;
+  --mv-radius: 14px;
+  --mv-radius-sm: 8px;
+  --mv-shadow-sm: 0 2px 4px -1px rgba(15, 23, 42, 0.04);
+  --mv-shadow: 0 10px 20px -3px rgba(15, 23, 42, 0.06), 0 4px 6px -2px rgba(15, 23, 42, 0.03);
+  --mv-shadow-hover: 0 20px 25px -5px rgba(15, 23, 42, 0.1), 0 10px 10px -5px rgba(15, 23, 42, 0.04);
+}
+
+/* 1. TIPOGRAFÍA Y FONDO GLOBAL */
+body, #page-wrapper {
+  background-color: var(--mv-bg) !important;
+  color: var(--mv-text-muted) !important;
+  font-family: "Inter", system-ui, sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6, .coursename, .navbar-brand {
+  font-family: "Outfit", system-ui, sans-serif !important;
+  color: var(--mv-text-main) !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.02em !important;
+}
+
+/* 2. CABEZAL (HEADER / NAVBAR) AZUL Y LIMPIO */
+.navbar.fixed-top, .login-navbar {
+  background: linear-gradient(to right, #1e3a8a, #2563eb) !important;
+  border-bottom: none !important;
+  box-shadow: 0 4px 12px rgba(30, 58, 138, 0.25) !important;
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+  min-height: 70px !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* Cambiar texto, íconos y botones del header a blanco puro */
+.navbar .nav-link,
+.navbar .btn,
+.usermenu .dropdown-toggle,
+.navbar .popover-region-toggle i,
+.editmode-switch-form label {
+  color: #ffffff !important;
+  opacity: 0.9 !important;
+  font-weight: 500 !important;
+  transition: all 0.3s ease;
+}
+
+/* Ocultar elementos innecesarios del header directamente (Limpieza) */
+.navbar .nav-item[data-key="myhome"],
+.breadcrumb-item:first-child,
+.breadcrumb-item a[href*="/my/"],
+form.editmode-switch-form,
+.editmode-switch-form {
+  display: none !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Hover en los botones del header general (Hacerlos blancos más marcados o revertir fondo) */
+.navbar .nav-link:hover,
+.navbar .nav-link.active,
+.usermenu.show .dropdown-toggle,
+.navbar .usermenu .dropdown-toggle:hover {
+  color: #1e3a8a !important; /* Texto Azul al hacer hover para hacer contraste real */
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  opacity: 1 !important;
+  transform: translateY(-1px);
+  border-radius: 8px !important;
+}
+
+.popover-region-toggle .icon {
+  color: #ffffff !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
+}
+
+.count-container {
+  background-color: #ef4444 !important;
+  color: white !important;
+  border-radius: 20px !important;
+  padding: 2px 6px !important;
+  box-shadow: 0 2px 4px rgba(239, 68, 68, 0.3) !important;
+}
+
+.userpicture {
+  border-radius: 50% !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+  border: 2px solid #fff !important;
+  transition: transform 0.2s ease;
+}
+
+.userpicture:hover {
+  transform: scale(1.05);
+  border-color: var(--mv-primary) !important;
+}
+
+.navbar-brand img, .logo {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3)) !important;
+}
+
+/* 3. DISEÑO PRINCIPAL: TARJETAS DE CURSO Y PÁNELES */
+.card, .block, .dashboard-card, .coursebox {
+  background-color: var(--mv-card-bg) !important;
+  border: 1px solid var(--mv-border) !important;
+  border-radius: var(--mv-radius) !important;
+  box-shadow: var(--mv-shadow-sm) !important;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.card:hover, .block:hover, .dashboard-card:hover {
+  box-shadow: var(--mv-shadow) !important;
+  transform: translateY(-4px) !important;
+  border-color: rgba(59, 130, 246, 0.3) !important;
+}
+
+.card-img-top, .dashboard-card-img {
+  border-top-left-radius: calc(var(--mv-radius) - 1px) !important;
+  border-top-right-radius: calc(var(--mv-radius) - 1px) !important;
+  height: 160px !important;
+  object-fit: cover !important;
+}
+
+.dashboard-card .coursename {
+  font-size: 1.15rem !important;
+  line-height: 1.3 !important;
+}
+
+/* 4. TODOS LOS BOTONES MODERNOS (Primarios, Secundarios, Búsqueda, Menús de Ordenamiento) */
+.btn-primary, .btn.btn-primary,
+.btn-secondary, .btn.btn-secondary,
+.btn-outline-secondary, .btn.btn-outline-secondary,
+.btn-light, .btn.btn-light,
+select.custom-select, select.form-control,
+.input-group-append .btn {
+  /* Aplicamos el mismo degradado hermoso y azul del header */
+  background: linear-gradient(to right, #1e3a8a, #2563eb) !important;
+  border: none !important;
+  border-radius: var(--mv-radius-sm) !important;
+  color: #fff !important;
+  font-family: "Outfit", sans-serif !important;
+  font-weight: 500 !important;
+  padding: 0.5rem 1.25rem !important;
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3) !important;
+  transition: all 0.25s cubic-bezier(0.25, 1, 0.5, 1) !important;
+}
+
+/* Específico para los menús desplegables de "Ordenar por", quitamos sus bordes feos nativos */
+select.custom-select, select.form-control {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  cursor: pointer !important;
+}
+
+/* Efecto Mágico al Hover para TODOS los botones */
+.btn-primary:hover, .btn.btn-primary:hover,
+.btn-secondary:hover, .btn.btn-secondary:hover,
+.btn-outline-secondary:hover, .btn.btn-outline-secondary:hover,
+.btn-light:hover, .btn.btn-light:hover,
+select.custom-select:hover, select.form-control:hover,
+.input-group-append .btn:hover {
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.5) !important;
+  transform: translateY(-2px) !important;
+  background: linear-gradient(to right, #2563eb, #1e3a8a) !important; /* Brillo invertido */
+  color: #fff !important;
+}
+
+/* Evitamos que las opciones internas del <select> se vuelvan oscuras o ilegibles al abrirse */
+select.custom-select option,
+select.form-control option {
+  background-color: var(--mv-card-bg) !important;
+  color: var(--mv-text-main) !important;
+  font-weight: 500 !important;
+}
+
+/* Ajustes geométricos para Cajas de Búsqueda (Input Groups) */
+/* Quitar redondeo izquierdo del botón para que encaje como bloque compacto a la barra */
+.input-group-append .btn,
+.input-group-btn .btn {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+/* Quitar redondeo derecho a la caja de texto para que pegue perfecto con el botón */
+.input-group > .form-control,
+.input-group > .custom-select {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+/* 5. BOTÓN CIRCULAR PREMIUM (Cajón de Bloques Lateral) */
+/* Al contenedor padre le quitamos fondos para evitar efecto de "doble círculo" */
+.drawer-toggles .drawer-right-toggle {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  height: auto !important;
+  width: auto !important;
+}
+
+/* Aplicamos el diseño circular EXCLUSIVAMENTE al botón interno */
+button[data-target="theme_boost-drawers-blocks"],
+[data-action="toggle"][data-target="theme_boost-drawers-blocks"],
+.drawer-toggles .drawer-right-toggle .btn {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 48px !important; /* Ajustado ligeramente para íconos Moodle */
+  height: 48px !important;
+  min-width: 48px !important;
+  min-height: 48px !important;
+  padding: 0 !important;
+  border-radius: 50% !important;
+  background: linear-gradient(to right, #1e3a8a, #2563eb) !important;
+  color: #ffffff !important;
+  border: none !important;
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3) !important;
+  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1) !important;
+  margin: 10px !important;
+  margin-top: 120px !important; /* Desplazamos el botón hacia abajo para mayor comodidad */
+  z-index: 99 !important;
+}
+
+button[data-target="theme_boost-drawers-blocks"]:hover,
+[data-action="toggle"][data-target="theme_boost-drawers-blocks"]:hover,
+.drawer-toggles .drawer-right-toggle .btn:hover {
+  transform: translateY(-3px) scale(1.05) !important;
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.5) !important;
+  background: linear-gradient(to right, #2563eb, #1e3a8a) !important;
+}
+
+button[data-target="theme_boost-drawers-blocks"] i,
+[data-action="toggle"][data-target="theme_boost-drawers-blocks"] i,
+.drawer-toggles .drawer-right-toggle .btn i {
+  color: #ffffff !important;
+  font-size: 1.25rem !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* 6. MENÚS DESPLEGABLES (Dropdowns del perfil, notificaciones, etc.) */
+.dropdown-menu, .popover-region-container {
+  background-color: var(--mv-card-bg) !important;
+  border: 1px solid var(--mv-border) !important;
+  border-radius: var(--mv-radius) !important;
+  box-shadow: var(--mv-shadow-hover) !important;
+  padding: 0.5rem !important;
+  animation: drop-fade 0.2s ease forwards;
+}
+
+.dropdown-item {
+  border-radius: var(--mv-radius-sm) !important;
+  color: var(--mv-text-main) !important;
+  font-weight: 500 !important;
+  padding: 0.5rem 1rem !important;
+  transition: all 0.2s ease !important;
+  margin-bottom: 2px !important;
+}
+
+/* Hover de Menús en el Perfil y Animación Derecha (Forzado al Azul Intenso) */
+#user-action-menu a.dropdown-item[role="menuitem"]:hover,
+#user-action-menu a.carousel-navigation-link:hover,
+.usermenu .dropdown-menu a.dropdown-item:hover,
+#usermenu-carousel .carousel-item a:hover,
+.dropdown-item:hover, 
+.dropdown-item.active {
+  color: #2563eb !important; 
+  background-color: #eff6ff !important;
+  text-decoration: none !important;
+  padding-left: 1.25rem !important;
+}
+
+@keyframes drop-fade {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 7. OCULTAR ELEMENTOS NO DESEADOS COMPLETAMENTE (Limpieza) */
+#page-footer, footer,
+#aswMenuButton, .asw-menu, .asw-menu-btn, .asw-btn, .sienna-accessibility,
+[id^="aswMenu"], [class*="accessibility-btn"] {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  pointer-events: none !important;
+  opacity: 0 !important;
+}
+
+/* Ocultar Componente de Buscar dentro de Vista General del Curso */
+.block_myoverview [data-region="search-input"],
+.block_myoverview .searchbar,
+.block_myoverview form.search-input-form,
+.block-myoverview [data-region="search-input"],
+.block_myoverview [data-region="search"] {
+  display: none !important;
+  visibility: hidden !important;
+  width: 0 !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* 8. BARRAS DE DESPLAZAMIENTO WEBKIT */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--mv-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+  border: 2px solid var(--mv-bg);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* 9. AJUSTES DE TEXTO EN LÍNEA (Búsqueda de cursos) */
+.simplesearchform,
+.search-input-form,
+.coursesearchbox form {
+  flex-wrap: nowrap !important;
+}
+
+.simplesearchform .btn,
+.search-input-form .btn,
+.coursesearchbox .btn,
+.coursesearchbox label {
+  white-space: nowrap !important;
+  min-width: max-content !important;
+}

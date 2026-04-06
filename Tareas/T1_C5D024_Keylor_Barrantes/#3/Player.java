@@ -18,6 +18,7 @@ public class Player implements Attackable<Enemy> {
         System.out.println("Player attacks enemy.");
     }
 
+    @Override
     public String toString() {
         return "Player: " + name;
     }

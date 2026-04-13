@@ -1,0 +1,171 @@
+{
+  // ========================
+  // 🎨 Editor Appearance
+  // ========================
+  "editor.fontFamily": "Hack Nerd Font Mono",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorStyle": "line-thin",
+  "editor.minimap.renderCharacters": false,
+  // ========================
+  // 🧠 Workbench UI
+  // ========================
+  "workbench.colorTheme": "Tokyo Night Pro",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.activityBar.location": "top",
+  "workbench.statusBar.visible": false,
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "workbench.startupEditor": "none",
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.panel.showLabels": false,
+  "window.menuBarVisibility": "compact",
+  // ========================
+  // 📁 Explorer
+  // ========================
+  "files.exclude": {
+    "**/*.class": true
+  },
+  // ========================
+  // 💻 Terminal
+  // ========================
+  "terminal.integrated.fontFamily": "Hack Nerd Font Mono",
+  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.lineHeight": 1.1,
+  "terminal.integrated.initialHint": false,
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "path": "C:\\Users\\Profesor\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "path": "C:\\Program Files\\Git\\bin\\bash.exe",
+      "args": [
+        "--login",
+        "-i"
+      ]
+    }
+  },
+  "explorer.compactFolders": false,
+  // ========================
+  // 🎨 Theme Overrides
+  // ========================
+  "workbench.colorCustomizations": {
+    "editorCursor.foreground": "#FFFFFF",
+    "terminalCursor.foreground": "#FFFFFF",
+    "terminalCursor.background": "#000000",
+    "terminal.foreground": "#CCCCCC"
+  },
+  "editor.tokenColorCustomizations": {
+    "[Bikkuri (Dark Coal & Serene)]": {
+      "textMateRules": [
+        {
+          "scope": [
+            "string",
+            "string.quoted",
+            "string.quoted.single",
+            "string.quoted.double"
+          ],
+          "settings": {
+            "foreground": "#9A6A6A"
+          }
+        }
+      ]
+    }
+  },
+  // ========================
+  // ▶️ Code Runner
+  // ========================
+  "code-runner.runInTerminal": true,
+  "code-runner.executorMap": {
+    "javascript": "node",
+    "java": "clear; cd $dir && javac $fileName && java $fileNameWithoutExt",
+    "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "zig": "zig run",
+    "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "php": "php",
+    "python": "python -u",
+    "powershell": "powershell -ExecutionPolicy ByPass -File",
+    "bat": "cmd /c",
+    "shellscript": "bash"
+  },
+  // ========================
+  // 🧾 Formatting
+  // ========================
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[java]": {
+    "editor.defaultFormatter": "Oracle.oracle-java"
+  },
+  // ========================
+  // ⚙️ System / Behavior
+  // ========================
+  "security.workspace.trust.untrustedFiles": "open",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.codeActionsOnSave": {},
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "chat.tools.terminal.simpleCollapsible": false,
+  // ========================
+  // 🐍 Python / Java
+  // ========================
+  "python.defaultInterpreterPath": "c:\\Users\\Profesor\\AppData\\Local\\Microsoft\\WindowsApps\\python3.13.exe",
+  "jdk.jdkhome": "c:\\Users\\Profesores\\Documents\\oracleJdk-21",
+  // ========================
+  // 🔕 Telemetry / Noise
+  // ========================
+  "jdk.telemetry.enabled": false,
+  "redhat.telemetry.enabled": false,
+  "update.showReleaseNotes": false,
+  // ========================
+  // 🤖 AI / GitLens
+  // ========================
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+  "chat.disableAIFeatures": true,
+  // ========================
+  // ✨ Animations / Effects
+  // ========================
+  "animations.Enabled": true,
+  "animations.Command-Palette": "None",
+  "animations.Tabs": "Slide",
+  "animations.Active": "Indent",
+  "animations.CursorAnimation": false,
+  "vscode_custom_css.imports": [
+    "file:///c:/Users/keylo/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js",
+    "file:///c:/Users/Profesores/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js"
+  ],
+  "php.suggest.basic": false,
+  "php.validate.enable": false,
+  "emmet.excludeLanguages": [
+    "markdown",
+    "php"
+  ],
+  
+}

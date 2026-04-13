@@ -15,11 +15,20 @@ public class Main {
         list.add(p2);
         list.add(p3);
 
-        Collections.sort(list);
-        Collections.sort(list, new ComparadorPorNombre());
-        Collections.sort(list, new ComparadorPorPrecio());
-
+        Collections.sort(list, (person1, person2) -> p1.getPrice().compareTo(p2.getPrice()));
         printList(list);
+        System.out.println("");
+        Collections.sort(list);
+        printList(list);
+        System.out.println("");
+        Collections.sort(list, new ComparadorPorNombre());
+        printList(list);
+        System.out.println("");
+        Collections.sort(list, new ComparadorPorPrecio());
+        printList(list);
+        System.out.println("");
+
+
     }
     
     public static void printList(ArrayList<Product> list) {

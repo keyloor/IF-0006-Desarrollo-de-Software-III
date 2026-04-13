@@ -1,7 +1,8 @@
-public class CreditCardFactory implements Factory {
+
+public class CreditCardFactory extends Factory {
 
     @Override
-    public Payment createProduct() {
+    public CreditCard createProduct() {
         return new CreditCard();
     }
 

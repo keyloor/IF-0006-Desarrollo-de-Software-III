@@ -1,7 +1,8 @@
-public class PaypalFactory implements Factory {
+
+public class PaypalFactory extends Factory {
 
     @Override
-    public Payment createProduct() {
+    public Paypal createProduct() {
         return new Paypal();
     }
 

@@ -1,4 +1,5 @@
-public interface Factory{
-    Payment createProduct();
+public abstract class Factory {
+
+    public abstract Payment createProduct();
 
 }

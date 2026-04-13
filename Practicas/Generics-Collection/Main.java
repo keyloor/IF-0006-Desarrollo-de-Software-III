@@ -46,7 +46,8 @@ public class Main {
     public static boolean isParseable(List<String> list) {
         try {
             for (String s : list) {
-                Integer.parseInt(s);
+                System.out.println(s);
+                //Integer.parseInt(s);
             }
         } catch (Exception e) {
             return false;

@@ -135,4 +135,5 @@
   "vscode_custom_css.imports": [
     "file:///c:/Users/keylo/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js"
   ],
+  "git.autofetch": true
 }

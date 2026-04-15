@@ -130,10 +130,5 @@
   // Agrega esta línea solo en el settings LOCAL de cada máquina, no en el sync.
   // "vscode_custom_css.imports": ["file:///c:/Users/TU_USUARIO/..."],
 
-  "window.menuBarVisibility": "compact",
-  "settingsSync.ignoredSettings": [],
-  "vscode_custom_css.imports": [
-    "file:///c:/Users/keylo/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js"
-  ],
   "git.autofetch": true
 }

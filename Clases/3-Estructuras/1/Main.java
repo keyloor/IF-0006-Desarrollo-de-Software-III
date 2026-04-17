@@ -12,6 +12,8 @@ public class Main {
         vehiculos.add("Bicicleta");
         vehiculos.add("Carro");
         vehiculos.add("Avión");
+
+        System.out.println(list.getFirst());
         
         vehiculos.forEach(vehiculo -> System.out.println(vehiculo));
     }

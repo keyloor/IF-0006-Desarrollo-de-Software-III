@@ -1,4 +1,6 @@
+
 public class Main {
+
     public static void main(String[] args) {
         GameBoyItemFactory gameBoyItemFactory = new GameBoyItemFactory();
         NintendoDSItemFactory nintendoDSItemFactory = new NintendoDSItemFactory();
@@ -17,6 +19,7 @@ public class Main {
         System.out.println("---  NintendoDS ---");
         nintendoB.golpear();
         nintendoM.recolectar();
+        System.out.println("");
         System.out.println("");
 
     }
